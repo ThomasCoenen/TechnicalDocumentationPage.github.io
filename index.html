@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+
+		/*prevent the body from overflowing. This ensures that our parent grid container will retain full control of the entire browser viewport. There should be nothing outside of our parent*/
+		body {
+			margin: auto 0;
+ 			overflow: hidden;
+ 			/*background-color: black;*/
+		}
+
+		/*grid container will take up all the viewport*/
+		.container {    
+		  height: 100vh;
+		  width: 100vw;
+		  display: grid;
+  		  grid-template-columns: 1fr;
+  		  grid-template-rows: auto 1fr 30px;
+  		  /*font-size: 20px;*/
+		}
+
+		#myHeader {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: auto;
+			overflow: hidden;
+			background-color: rgb(188, 245, 66);
+			align-items: center;
+		}
+
+		ul.list {
+			list-style: none;
+			justify-self: start;
+			align-self: start;
+		}
+
+		div.buttons {
+			justify-self: end;
+			align-self: start;
+		}
+
+		.sidebar-content {
+			display: grid;
+			grid-template-columns: 1fr 3fr;
+ 			overflow: hidden; /*hide any overflow to ensure that nothing leaks outside of the .content element that would disturb the parent’s layout.*/
+		}
+
+		/*Since it’s immediate parent hides all overflow, adding overflow-y: scroll ensures that content that would exceed the height of this element automatically adds scrolling from within.*/
+		.content {
+			 overflow-y: scroll;
+			 padding: 20px;
+			 background-color: Lightgrey;
+			 font-size: 25px;
+		}
+
+		.sidebar {
+			overflow-y: scroll;
+			font-size: 16px;
+		}
+
+		.link article {
+			font-size: 17px;
+		}
+
+		.footer {
+			background-color: rgb(66, 117, 245);
+		}
+
+
+
+	</style>
+</head>
+
+<body>
+	<div class="container">
+
+		<header class="header" id="myHeader">
+			<ul class="list">
+				<li>FCC: Survey Form</li> 
+				<li>mywebsite.com</li> 
+			</ul>
+
+			<div class="buttons">
+				<button>Heart</button>
+				<button>Sign Up</button>
+				<button>Log In</button>
+			</div>
+		</header>
+
+
+    	<div class="sidebar-content">
+
+    		<div class="sidebar">
+    			<h2>JS Documentation</h2>
+    			<ul>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    				<li><a href="">Introduction</a></li>
+    			</ul>
+    		</div>
+    			
+
+
+    		<div class="content">
+    			<header class="link">Introduction
+    				<article>
+    					JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+
+						JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+    				</article>
+    			</header>
+
+    			<header class="link">Introduction
+    				<article>
+    					JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+
+						JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+    				</article>
+    			</header>
+
+    			<header class="link">Introduction
+    				<article>
+    					JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+
+						JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+    				</article>
+    			</header>
+
+    			<header class="link">Introduction
+    				<article>
+    					JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+
+						JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+    				</article>
+    			</header>
+
+    			<header class="link">Introduction
+    				<article>
+    					JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+
+						JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+    				</article>
+    			</header>
+
+    			<header class="link">Introduction
+    				<article>
+    					JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+
+						JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+    				</article>
+    			</header>
+
+    			<header class="link">Introduction
+    				<article>
+    					JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+
+						JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+    				</article>
+    			</header>
+			    	
+			    
+    		</div>
+
+    	</div>
+
+    	<div class="footer">.footer</div>	
+
+	</div>
+
+
+</body>
+</html>
